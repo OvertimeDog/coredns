@@ -4,6 +4,9 @@ package plugin
 
 import (
 	// Include all plugins.
+	_ "github.com/Tencent/bk-bcs/bcs-services/bcs-dns/plugin/bcscustom"
+	_ "github.com/Tencent/bk-bcs/bcs-services/bcs-dns/plugin/bcsscheduler"
+	_ "github.com/Tencent/bk-bcs/bcs-services/bcs-dns/plugin/log"
 	_ "github.com/coredns/coredns/plugin/auto"
 	_ "github.com/coredns/coredns/plugin/autopath"
 	_ "github.com/coredns/coredns/plugin/bind"
@@ -15,15 +18,11 @@ import (
 	_ "github.com/coredns/coredns/plugin/erratic"
 	_ "github.com/coredns/coredns/plugin/errors"
 	_ "github.com/coredns/coredns/plugin/etcd"
-	_ "github.com/coredns/coredns/plugin/federation"
 	_ "github.com/coredns/coredns/plugin/file"
 	_ "github.com/coredns/coredns/plugin/forward"
 	_ "github.com/coredns/coredns/plugin/health"
 	_ "github.com/coredns/coredns/plugin/hosts"
-	_ "github.com/coredns/coredns/plugin/k8s_external"
-	_ "github.com/coredns/coredns/plugin/kubernetes"
 	_ "github.com/coredns/coredns/plugin/loadbalance"
-	_ "github.com/coredns/coredns/plugin/log"
 	_ "github.com/coredns/coredns/plugin/loop"
 	_ "github.com/coredns/coredns/plugin/metadata"
 	_ "github.com/coredns/coredns/plugin/metrics"
@@ -33,11 +32,8 @@ import (
 	_ "github.com/coredns/coredns/plugin/reload"
 	_ "github.com/coredns/coredns/plugin/rewrite"
 	_ "github.com/coredns/coredns/plugin/root"
-	_ "github.com/coredns/coredns/plugin/route53"
 	_ "github.com/coredns/coredns/plugin/secondary"
 	_ "github.com/coredns/coredns/plugin/template"
 	_ "github.com/coredns/coredns/plugin/tls"
-	_ "github.com/coredns/coredns/plugin/trace"
 	_ "github.com/coredns/coredns/plugin/whoami"
-	_ "github.com/mholt/caddy/onevent"
 )
